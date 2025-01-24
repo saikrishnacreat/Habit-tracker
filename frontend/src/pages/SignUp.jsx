@@ -5,6 +5,9 @@ const SignUp = () => {
   const returnLogin = () =>{
       navigate("/");
   }
+  const goLogin = () =>{
+      navigate("/dashboard");
+  }
   return (
   <>
     <p>HABIT TRACKER </p>
@@ -16,10 +19,10 @@ const SignUp = () => {
     <input type="mail" placeholder='gmail' /> <br></br>
     <input type="password" placeholder='password' /> <br></br>
     <input type="password" placeholder='confirm password' /><br></br>
-    <button>SIGN IN</button>
+    <button onClick={goLogin}>SIGN IN</button>
     </form>
-    <div>Already Login Click Below!</div>
-    <button onClick={returnLogin}>Return</button>
+    <div>Already Registered Click Below!</div>
+    <button onClick={returnLogin}>Login</button>
     </>
   )
 }
